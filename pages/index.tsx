@@ -1,7 +1,7 @@
 const Home: React.FC = (): JSX.Element => {
   return (
     <>
-      <div>
+      <div id="divy">
         <h1>Hello Next World</h1>
       </div>
     </>
