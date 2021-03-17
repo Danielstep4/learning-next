@@ -1,4 +1,4 @@
-type DummyEvent = {
+export type DummyEvent = {
   id: string;
   title: string;
   description: string;
@@ -63,5 +63,6 @@ export function getFilteredEvents(dateFilter: DataFilter) {
 }
 
 export function getEventById(id: DummyEvent['id']) {
+  console.log(id)
   return DUMMY_EVENTS.find((event) => event.id === id);
 }
