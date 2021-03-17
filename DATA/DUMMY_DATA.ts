@@ -47,7 +47,7 @@ export function getFeaturedEvents() {
 export function getAllEvents() {
   return DUMMY_EVENTS;
 }
-type DataFilter = {
+export type DataFilter = {
   year: number;
   month: number;
 }
