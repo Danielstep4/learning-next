@@ -1,4 +1,4 @@
-import { DummyEvent } from "../DATA/DUMMY_DATA";
+import { DummyEvent } from "../data/DUMMY_DATA";
 import classes from "../styles/event-item.module.scss";
 
 const Event: React.FC<{ chosenEvent: DummyEvent }> = ({ chosenEvent }) => {

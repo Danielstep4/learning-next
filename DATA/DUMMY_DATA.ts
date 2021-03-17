@@ -62,7 +62,7 @@ export function getFilteredEvents(dateFilter: DataFilter) {
   return filteredEvents;
 }
 
-export function getEventById(id: DummyEvent['id']) {
-  console.log(id)
+export function getEventById(id: DummyEvent['id'] | string[]) {
+  if(Array.isArray(id)) return;
   return DUMMY_EVENTS.find((event) => event.id === id);
 }

@@ -1,14 +1,14 @@
-import { useRouter } from "next/router";
 import Event from "../../components/Event";
-import { getEventById } from "../../DATA/DUMMY_DATA";
+import { useRouter } from "next/router";
+import { DummyEvent, getEventById } from "../../data/DUMMY_DATA";
 const SingleEvent: React.FC = (): JSX.Element => {
   const router = useRouter();
-  const { eventid } = router.query;
+  const { eventId } = router.query;
   return (
     <>
       <h1>Single Event Without Query</h1>
-      <span>{eventid}</span>
-      {/* <Event chosenEvent={getEventById(eventid)} />; */}
+      <span>{eventId}</span>
+      {/* <Event chosenEvent={chosenEvent} />; */}
     </>
   );
 };
