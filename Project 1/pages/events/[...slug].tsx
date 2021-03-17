@@ -8,10 +8,9 @@ import Event from "../../components/Event";
 
 const SingleEventWithQuery: React.FC = (): JSX.Element => {
   const router = useRouter();
-  let filter: DataFilter;
   const { slug } = router.query;
-  if (!slug || !slug.length) return <h1>404</h1>;
-  filter = {
+  if (!slug || !slug.length || slug.length > 2) return <h1>404</h1>;
+  const filter: DataFilter = {
     year: +slug[0],
     month: +slug[1],
   };
